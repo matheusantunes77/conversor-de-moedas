@@ -12,7 +12,7 @@ body{
     background: rgb(138, 81, 252);
 }
 #img-conversor{
-    width: 300px;
+    width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -30,6 +30,7 @@ label{
     color: #777777;
     font-size: 14px;
     font-weight: 500;
+    
 }
 select,input{
     background: #FFFFFF;
