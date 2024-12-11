@@ -105,7 +105,7 @@ section{
     #formulario{
         position: absolute;
         display: inline-block;
-        height: auto;
+        height: 113vh;
         width: auto;
         top: 2px;
         
@@ -131,7 +131,7 @@ section{
         display: none;
     }
     #formulario{
-            height: 100vh;
+            height: 113vh;
             position: absolute;
             left: -1px;
             width: auto;
