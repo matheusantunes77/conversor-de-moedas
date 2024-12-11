@@ -241,24 +241,24 @@ function primeiro_Input() {
     if (primeiroSelect.value == 'opcao_dolar') {
         primeiro_moeda.innerHTML = 'Dólar americano'
         flag_img.src = './assets/dolar.png'
-        values.innerHTML = 'U$$10.000,00'
+        values.innerHTML = 'U$$0,00'
 
     }
     if (primeiroSelect.value == 'opcao_real') {
         primeiro_moeda.innerHTML = 'R$ Real'
         flag_img.src = "./assets/real.png"
-        values.innerHTML = 'R$ 10.000,00'
+        values.innerHTML = 'R$ 0,00'
 
     }
     if (primeiroSelect.value == 'opcao_euro') {
         primeiro_moeda.innerHTML = '€ Euro'
         flag_img.src = './assets/Euro.png'
-        values.innerHTML = '€ 10.000,00'
+        values.innerHTML = '€ 0,00'
     }
     if (primeiroSelect.value == 'opcao_libra') {
         primeiro_moeda.innerHTML = '£ Libra Esterlina'
         flag_img.src = './assets/libra 1.png'
-        values.innerHTML = '£ 10.000,00'
+        values.innerHTML = '£ 0,00'
 
     }
 
