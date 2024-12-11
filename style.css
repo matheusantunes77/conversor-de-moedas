@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    outline: none;
+    
+}
+body{
+    background: rgb(138, 81, 252);
+}
+#img-conversor{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    width: 375px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 44px; //* 1 valor, (4 lados) 2 valores( 1 valor em cima e em baixo e 2 valor para os lados) 3 valores (1 valor cima, 2 valor dos lados e 3 valor embaixo) 4 valores (1 valor, cima, 2 direita, 3 baixo, 4 esquerda) ponteiro do relogio*/
+}
+label{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+}
+select,input{
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 10px;
+    width: 100%;
+    height:48px;
+    margin-bottom: 24px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 500;
+    padding-left: 18px;
+    appearance: none;
+}
+button{
+    background: #772FD3;
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 0.6;
+}
+section{
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.arrow-img{
+    margin: 15px 0;
+}
+.currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.currency{
+    color: #777777;
+    font-size:14px;
+}
+.currency-value, .currency-value-to-convert{
+    color:#555555;
+    font-size: 20px;
+}
