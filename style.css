@@ -6,6 +6,7 @@
     font-family: "Roboto", serif;
     outline: none;
     
+    
 }
 body{
     background: rgb(138, 81, 252);
@@ -87,4 +88,53 @@ section{
 .currency-value, .currency-value-to-convert{
     color:#555555;
     font-size: 20px;
+}
+@media (max-width: 380px){
+
+
+    body{
+        display: inline-block;
+        height: auto;
+        width: auto;
+        
+    }     
+
+    #img-conversor {
+        display: none;
+    }
+    #formulario{
+        position: absolute;
+        display: inline-block;
+        height: auto;
+        width: auto;
+        top: 2px;
+        
+       
+    }
+    
+}
+@media (max-width: 426px){
+    #img-conversor{
+        display: none;
+    }
+    #formulario{
+        position: absolute;
+        display: inline-block;
+        height: 102vh;
+        width: auto;
+        top: -11px;
+    }
+          
+}
+@media (max-width: 431px){
+    #img-conversor{
+        display: none;
+    }
+    #formulario{
+            height: 100vh;
+            position: absolute;
+            left: -1px;
+            width: auto;
+            
+    }
 }
