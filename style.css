@@ -10,21 +10,24 @@
 }
 body{
     background: rgb(138, 81, 252);
+    overflow: hidden;
+  
 }
 #img-conversor{
-    width: 200px;
+    width: 130px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 main{
     width: 375px;
+    height: 640px;
     background: #F4F4F4;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    padding: 44px; //* 1 valor, (4 lados) 2 valores( 1 valor em cima e em baixo e 2 valor para os lados) 3 valores (1 valor cima, 2 valor dos lados e 3 valor embaixo) 4 valores (1 valor, cima, 2 direita, 3 baixo, 4 esquerda) ponteiro do relogio*/
+    padding: 18px;//* 1 valor, (4 lados) 2 valores( 1 valor em cima e em baixo e 2 valor para os lados) 3 valores (1 valor cima, 2 valor dos lados e 3 valor embaixo) 4 valores (1 valor, cima, 2 direita, 3 baixo, 4 esquerda) ponteiro do relogio*/
 }
 label{
     color: #777777;
@@ -38,7 +41,7 @@ select,input{
     border-radius: 10px;
     width: 100%;
     height:48px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     margin-top: 5px;
     font-size: 16px;
     color: #555555;
@@ -66,7 +69,7 @@ button:active{
 section{
     border: 1px solid #772FD3;
     border-radius: 20px;
-    margin-top: 36px;
+    margin-top: 13px;
     padding: 12px;
     display: flex;
     flex-direction: column;

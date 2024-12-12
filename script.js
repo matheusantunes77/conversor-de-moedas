@@ -126,6 +126,7 @@ function convertValues() {
             style: 'currency',
             currency: 'USD'
         }).format(currencyConvert)
+
     }
     // euro
     if (primeiroSelect.value == 'opcao_euro' && currencySelect.value == 'dolar') {
