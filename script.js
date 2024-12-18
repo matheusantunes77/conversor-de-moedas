@@ -101,8 +101,8 @@ function convertValues() {
             style: 'currency',
             currency: 'USD'
         }).format(currencyConvert)
-
     }
+    
     if (primeiroSelect.value == 'opcao_dolar' && currencySelect.value == 'libra') {
         valueAlreadyConverted.innerHTML = new Intl.NumberFormat('en-IN', {
             style: 'currency',
@@ -126,8 +126,8 @@ function convertValues() {
             style: 'currency',
             currency: 'USD'
         }).format(currencyConvert)
-
     }
+    
     // euro
     if (primeiroSelect.value == 'opcao_euro' && currencySelect.value == 'dolar') {
         valueAlreadyConverted.innerHTML = new Intl.NumberFormat('en-US',
@@ -199,7 +199,7 @@ function convertValues() {
         }).format(currencyConvert)
 
     }
-
+    
 
     
 
@@ -210,27 +210,41 @@ function changeCurrency() {
 
     const currencyName = document.getElementById('currency-name')
     const currencyImg = document.querySelector('.currency-img')
-
-
+    
+    
 
     if (currencySelect.value == 'dolar') {
         currencyName.innerHTML = 'Dolar americano'
         currencyImg.src = './assets/dolar.png'
+        if(primeiroSelect.value == 'opcao_dolar' && currencySelect.value == 'dolar'){
+            alert("As moedas selecionadas são iguais!")
+    
+        }
 
 
     }
     if (currencySelect.value == 'euro') {
         currencyName.innerHTML = 'Euro'
         currencyImg.src = './assets/Euro.png'
+        if(primeiroSelect.value == 'opcao_euro' && currencySelect.value == 'euro'){
+            alert("As moedas selecionadas são iguais!")
+    
+        }
+
     }
     if (currencySelect.value == 'libra') {
         currencyName.innerHTML = 'Libra'
         currencyImg.src = './assets/libra 1.png'
+        if(primeiroSelect.value == 'opcao_libra' && currencySelect.value == 'libra'){
+            alert("As moedas selecionadas são iguais!")
+    
+        }
     }
     if (currencySelect.value == 'dinar') {
         currencyName.innerHTML = 'Dinar Kwaitiano'
         currencyImg.src = './assets/libra 1.png'
     }
+    
 
 
 }
@@ -243,7 +257,7 @@ function primeiro_Input() {
         primeiro_moeda.innerHTML = 'Dólar americano'
         flag_img.src = './assets/dolar.png'
         values.innerHTML = 'U$$0,00'
-
+    
     }
     if (primeiroSelect.value == 'opcao_real') {
         primeiro_moeda.innerHTML = 'R$ Real'
@@ -255,6 +269,10 @@ function primeiro_Input() {
         primeiro_moeda.innerHTML = '€ Euro'
         flag_img.src = './assets/Euro.png'
         values.innerHTML = '€ 0,00'
+        if(primeiroSelect.value == 'opcao_euro' && currencySelect == 'euro'){
+            alert("As moedas selecionadas são iguais!")
+        }
+
     }
     if (primeiroSelect.value == 'opcao_libra') {
         primeiro_moeda.innerHTML = '£ Libra Esterlina'
@@ -262,15 +280,20 @@ function primeiro_Input() {
         values.innerHTML = '£ 0,00'
 
     }
+   
+    if(primeiroSelect.value == 'opcao_libra' && currencySelect == 'libra'){
+        alert("As moedas selecionadas são iguais!")
+    }
 
 }
 
 
 
 
-currencySelect.addEventListener('change', changeCurrency)
+currencySelect.addEventListener('click', changeCurrency)
 /* Ele está ouvindo meu botão, quando ele é clicado, chamar a função */
 convertButton.addEventListener('click', convertValues)
+
 primeiroSelect.addEventListener('change', primeiro_Input)
 
 
