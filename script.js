@@ -289,12 +289,12 @@ function primeiro_Input() {
 
 
 
-
+primeiroSelect.addEventListener('change', primeiro_Input)
 currencySelect.addEventListener('click', changeCurrency)
 /* Ele está ouvindo meu botão, quando ele é clicado, chamar a função */
 convertButton.addEventListener('click', convertValues)
 
-primeiroSelect.addEventListener('change', primeiro_Input)
+
 
 
 
