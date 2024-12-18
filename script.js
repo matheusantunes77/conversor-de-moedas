@@ -236,7 +236,7 @@ function changeCurrency() {
         currencyName.innerHTML = 'Libra'
         currencyImg.src = './assets/libra 1.png'
         if(primeiroSelect.value == 'opcao_libra' && currencySelect.value == 'libra'){
-            alert("As moedas selecionadas são iguais!")
+            alert("As moedas selecionadas são iguais!!")
     
         }
     }
